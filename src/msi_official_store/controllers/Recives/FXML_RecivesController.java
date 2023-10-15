@@ -15,7 +15,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -48,8 +47,6 @@ public class FXML_RecivesController implements Initializable {
     private TextField txt_laptop_gpu;
     @FXML
     private TextField txt_laptop_price;
-    @FXML
-    private CheckBox Member_btn;
 
     /**
      * Initializes the controller class.

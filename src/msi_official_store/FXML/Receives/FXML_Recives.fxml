@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
+<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
     <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="388.0" style="-fx-background-color: red;">
             <children>
@@ -68,6 +71,11 @@
                         <DropShadow blurType="GAUSSIAN" height="35.83" radius="12.965" width="18.03" />
                     </effect>
                 </Button>
+            <Label layoutX="130.0" layoutY="400.0" text="\$" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Label>
            
             </children>
         </AnchorPane>

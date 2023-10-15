@@ -50,7 +50,7 @@
                         <Image url="@../../../../../assets/images/Gaming/MSI%20Pulse%2015%20B13VGK.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIPulse15B13V" layoutX="89.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Pulse 15 B13V">
+                  <ToggleButton fx:id="MSIPulse15B13V" layoutX="89.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Pulse 15 B13V">
                      <toggleGroup>
                         <ToggleGroup fx:id="Name_Models_Gaming" />
                      </toggleGroup>
@@ -63,7 +63,7 @@
                         <Image url="@../../../../../assets/images/Gaming/Bravo%2015%20C7VE.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIBRAVO15C7V" layoutX="437.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI BRAVO 15 C7V" toggleGroup="$Name_Models_Gaming">
+                  <ToggleButton fx:id="MSIBRAVO15C7V" layoutX="437.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI BRAVO 15 C7V" toggleGroup="$Name_Models_Gaming">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -73,7 +73,7 @@
                         <Image url="@../../../../../assets/images/Gaming/MSI%20Titan%20GT77%20HX%2013V.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSITitanGT77HX13V" layoutX="74.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Titan GT77 HX 13V" toggleGroup="$Name_Models_Gaming">
+                  <ToggleButton fx:id="MSITitanGT77HX13V" layoutX="74.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Titan GT77 HX 13V" toggleGroup="$Name_Models_Gaming">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Image url="@../../../../../assets/images/Gaming/MSI%20Katana%2017%20B13VFK.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIKatana17B13VFK" layoutX="437.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Katana 17 B13VFK" toggleGroup="$Name_Models_Gaming">
+                  <ToggleButton fx:id="MSIKatana17B13VFK" layoutX="437.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Gaming" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Katana 17 B13VFK" toggleGroup="$Name_Models_Gaming">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>

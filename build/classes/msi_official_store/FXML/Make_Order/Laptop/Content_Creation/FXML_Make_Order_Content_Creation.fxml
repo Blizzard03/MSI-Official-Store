@@ -50,7 +50,7 @@
                         <Image url="@../../../../../assets/images/Content_Creations/MSI%20Creator%20Z16%20HX%20Studio%20-%20B13V.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSICreatorZ16HXStudioB13VETO" layoutX="28.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Creator Z16 HX Studio - B13VETO">
+                  <ToggleButton fx:id="MSICreatorZ16HXStudioB13VETO" layoutX="28.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Creator Z16 HX Studio - B13VETO">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -63,7 +63,7 @@
                         <Image url="@../../../../../assets/images/Content_Creations/Creator%20Z17%20HX%20Studio%20-%20A13V.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSICreatorZ17HXStudioA13V" layoutX="391.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Creator Z17 HX Studio - A13V" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSICreatorZ17HXStudioA13V" layoutX="391.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Creator Z17 HX Studio - A13V" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -73,7 +73,7 @@
                         <Image url="@../../../../../assets/images/Content_Creations/MSI%20Creator%20M16%20B13VE.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSICreatorM16B13VE" layoutX="74.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: transparant; -fx-cursor: hand;" text=" MSI Creator M16 B13VE" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSICreatorM16B13VE" layoutX="74.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text=" MSI Creator M16 B13VE" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Image url="@../../../../../assets/images/Content_Creations/MSI%20Creator%20Z16%20HX%20Studio%20-%20B13VGTO.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSICreatorZ16HXStudioB13VGTO" layoutX="391.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Creator Z16HX Studio B13VGTO" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSICreatorZ16HXStudioB13VGTO" layoutX="391.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Creator_Creation" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Creator Z16HX Studio B13VGTO" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>

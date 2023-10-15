@@ -77,6 +77,7 @@
                </font>
             </Label>
             <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="232.0" prefHeight="25.0" prefWidth="199.0" />
+            <Label layoutX="76.0" layoutY="266.0" text="\$" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

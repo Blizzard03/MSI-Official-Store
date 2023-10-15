@@ -60,13 +60,14 @@ public class FXML_InvoiceController implements Initializable {
         if (Price > 1000.00) {
             double harga = Double.parseDouble(Price_txt.getText());
             double tax = harga * 0.0028;
-            double discount = harga * 0004;
+            double discount = harga * 004;
             double shipping = 250.00;
-            double totalharga = harga + tax + discount + shipping;
+            double totalharga = harga + tax + shipping;
+            double hargasetelahdiskondiskon = discount - totalharga;
             Tax_txt.setText(formater.format(tax));
             shipping_txt.setText(formater.format(shipping));
             Discount_txt.setText(formater.format(discount));
-            Total_txt.setText(formater.format(totalharga));
+            Total_txt.setText(formater.format(hargasetelahdiskondiskon));
             
 
         } else {

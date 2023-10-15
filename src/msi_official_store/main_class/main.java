@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
@@ -15,15 +16,16 @@ import javafx.stage.Stage;
  * @author mariq
  */
 public class main extends Application {
-    
+
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stg) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/msi_official_store/FXML/splash_screen/splashscreen.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+        stg.setResizable(false);
+        stg.setIconified(false);
+        stg.setScene(scene);
+        stg.show();
     }
 
     /**
@@ -32,5 +34,5 @@ public class main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

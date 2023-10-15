@@ -50,7 +50,7 @@
                         <Image url="@../../../../../assets/images/Bussiness&amp;Producivity/MSI%20Summit%20E14%20Flip%20Evo%20-%20A13M.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSISummitE14FlipEvoA13M" layoutX="50.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Summit E14 Flip Evo - A13M">
+                  <ToggleButton fx:id="MSISummitE14FlipEvoA13M" layoutX="50.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Summit E14 Flip Evo - A13M">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -63,7 +63,7 @@
                         <Image url="@../../../../../assets/images/Bussiness&amp;Producivity/MSI%20Modern%2014%20C7M.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIModern14C7M" layoutX="431.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Modern 14 C7M" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSIModern14C7M" layoutX="431.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Modern 14 C7M" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -73,7 +73,7 @@
                         <Image url="@../../../../../assets/images/Bussiness&amp;Producivity/MSI%20Prestige%2014%20H%20B13UCX.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIPrestige14HB13UCX" layoutX="50.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Prestige 14 H B13UCX" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSIPrestige14HB13UCX" layoutX="50.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Prestige 14 H B13UCX" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Image url="@../../../../../assets/images/Bussiness&amp;Producivity/Modern%2015%20B13M.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIModern15B13M" layoutX="429.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: transparant; -fx-cursor: hand;" text="MSI Modern 15 B13M" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSIModern15B13M" layoutX="429.0" layoutY="650.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Modern 15 B13M" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
