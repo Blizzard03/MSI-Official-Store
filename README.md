@@ -27,11 +27,11 @@
 ![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/87149435-d7fc-473d-9275-b4ed29bc81ac)
 
 ## Receipt
-![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/1871ace3-7d43-424b-9c08-dd3bdf878fc2)
+![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/eeb630f0-98d6-4d59-aa98-ed98939b510a)
+
 
 ## Invoice
-![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/491cba30-3f6a-401f-9c9b-57b4ebbf6308)
-
+![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/6d02b15e-2b52-4c6b-8987-eab0ca3e8a13)
 
 
 
