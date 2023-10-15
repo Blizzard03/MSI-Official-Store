@@ -135,6 +135,8 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
     private void Laptop_Creator_Creation(ActionEvent event) {
         //MSI Creator Z16 HX Studio B13 VETO
         if (event.getSource() == MSICreatorZ16HXStudioB13VETO) {
+            MSICreatorZ16HXStudioB13VETO.setSelected(true);
+            LCCM.setName(MSICreatorZ16HXStudioB13VETO.getText());
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -147,8 +149,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-                MSICreatorZ16HXStudioB13VETO.setSelected(true);
-                LCCM.setName(MSICreatorZ16HXStudioB13VETO.getText());
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -156,6 +157,8 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z17 HX Studio A13V
         if (event.getSource() == MSICreatorZ17HXStudioA13V) {
+            MSICreatorZ17HXStudioA13V.setSelected(true);
+            LCCM.setName(MSICreatorZ17HXStudioA13V.getText());
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -168,8 +171,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-                MSICreatorZ17HXStudioA13V.setSelected(true);
-                LCCM.setName(MSICreatorZ17HXStudioA13V.getText());
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -177,6 +179,8 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator M16 B13VE
         if (event.getSource() == MSICreatorM16B13VE) {
+            MSICreatorM16B13VE.setSelected(true);
+            LCCM.setName(MSICreatorM16B13VE.getText());
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -189,8 +193,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-                MSICreatorM16B13VE.setSelected(true);
-                LCCM.setName(MSICreatorM16B13VE.getText());
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -198,6 +201,8 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z16HX Studio B13VGTO
         if (event.getSource() == MSICreatorZ16HXStudioB13VGTO) {
+            MSICreatorZ16HXStudioB13VGTO.setSelected(true);
+            LCCM.setName(MSICreatorZ16HXStudioB13VGTO.getText());
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -210,8 +215,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-                MSICreatorZ16HXStudioB13VGTO.setSelected(true);
-                LCCM.setName(MSICreatorZ16HXStudioB13VGTO.getText());
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

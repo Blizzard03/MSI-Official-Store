@@ -9,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
+<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="362.0" style="-fx-background-color: red;">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="397.0" style="-fx-background-color: red;">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -54,7 +54,7 @@
                   <Font name="Century" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txt_laptop_gpu" editable="false" layoutX="140.0" layoutY="329.0" prefHeight="25.0" prefWidth="197.0" />
+            <TextField fx:id="txt_laptop_gpu" editable="false" layoutX="140.0" layoutY="329.0" prefHeight="25.0" prefWidth="226.0" />
             <TextField fx:id="txt_laptop_price" editable="false" layoutX="140.0" layoutY="366.0" prefHeight="25.0" prefWidth="197.0" />
             <Label layoutX="11.0" layoutY="369.0" text="Price" textFill="WHITE">
                <font>

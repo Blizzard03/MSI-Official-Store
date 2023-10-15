@@ -18,7 +18,9 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import msi_official_store.models.Laptop.Gaming.Laptop_Gaming_Model;
+import java.io.EOFException;
+
+import msi_official_store.controllers.Recives.FXML_RecivesController;
 
 /**
  * FXML Controller class
@@ -27,8 +29,6 @@ import msi_official_store.models.Laptop.Gaming.Laptop_Gaming_Model;
  */
 public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
 
-    //Laptop Gaming Model
-    Laptop_Gaming_Model LGM = new Laptop_Gaming_Model();
     @FXML
     private SplitPane Menu_Order;
     @FXML
@@ -129,7 +129,7 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
     }
 
     @FXML
-    private void Laptop_Gaming(ActionEvent event) {
+    private void Laptop_Gaming(ActionEvent event) throws IOException {
 
         //MSI Pulse 15B13V
         if (event.getSource() == MSIPulse15B13V) {
@@ -138,6 +138,9 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIPulse15B13V.getText(), "Intel i9 - 13900H", "RTX 4070 LAPTOP GPU, 8GB GDD6");
+                Receive.showinfoprice(1849.49);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -146,7 +149,6 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIPulse15B13V.setSelected(true);
-                LGM.setName(MSIPulse15B13V.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -154,11 +156,15 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
 
         //MSI BRAVO 15 C7V
         if (event.getSource() == MSIBRAVO15C7V) {
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIBRAVO15C7V.getText(), "AMD RYZEN 7 7735HS", "RTX 4050 LAPTOP GPU, 6GB GDD6");
+                Receive.showinfoprice(1849.49);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -167,7 +173,6 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIBRAVO15C7V.setSelected(true);
-                LGM.setName(MSIBRAVO15C7V.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -175,11 +180,15 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
 
         //MSI Titan GT77 HX13V
         if (event.getSource() == MSITitanGT77HX13V) {
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSITitanGT77HX13V.getText(), "Intel i9 - 13980HX", "RTX 4090 LAPTOP GPU, 16GB GDD6");
+                Receive.showinfoprice(1849.49);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -188,7 +197,6 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSITitanGT77HX13V.setSelected(true);
-                LGM.setName(MSITitanGT77HX13V.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -196,11 +204,15 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
 
         //MSI Katana 17 B13VFK
         if (event.getSource() == MSIKatana17B13VFK) {
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIKatana17B13VFK.getText(), "Intel i9 - 13900H", "RTX 4060 LAPTOP GPU, 8GB GDD6");
+                Receive.showinfoprice(1849.49);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -209,7 +221,6 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIKatana17B13VFK.setSelected(true);
-                LGM.setName(MSIKatana17B13VFK.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }

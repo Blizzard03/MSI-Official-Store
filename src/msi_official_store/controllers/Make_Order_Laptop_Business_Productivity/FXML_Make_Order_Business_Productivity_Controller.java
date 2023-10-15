@@ -197,8 +197,8 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
             }
         }
 
-        //MSI Creator Z16HX Studio B13VGTO
-        if (event.getSource() == MSICreatorZ16HXStudioB13VGTO) {
+        //MSI Modern 15 B13M
+        if (event.getSource() == MSIModern15B13M) {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -211,8 +211,8 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-                MSICreatorZ16HXStudioB13VGTO.setSelected(true);
-                LCCM.setName(MSICreatorZ16HXStudioB13VGTO.getText());
+                MSIModern15B13M.setSelected(true);
+                LBPM.setName(MSIModern15B13M.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
