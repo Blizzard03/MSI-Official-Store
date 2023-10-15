@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="Invoice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Invoice.FXML_InvoiceController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="721.0" prefWidth="528.0">
+         <children>
+            <ImageView fitHeight="663.0" fitWidth="533.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/INVOICE%20MSI.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="201.0" layoutY="671.0" mnemonicParsing="false" onAction="#Main_Menu" style="-fx-background-color: gold; -fx-cursor: hand;" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="Elephant Italic" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
