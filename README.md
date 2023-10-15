@@ -3,6 +3,7 @@
 
 **Assume**
 - This application can only purchase 1 laptop for each model.
+- The currency used is **USD "$"**
 
  ## Slash Screen 
  ![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/db8aae3e-afb8-4cdf-a954-050959a03104)
