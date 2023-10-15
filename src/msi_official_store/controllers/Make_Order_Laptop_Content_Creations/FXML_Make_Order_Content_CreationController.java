@@ -19,7 +19,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import msi_official_store.models.Laptop.Content_Creation.Laptop_Content_Creation_Model;
+import msi_official_store.controllers.Recives.FXML_RecivesController;
 
 /**
  * FXML Controller class
@@ -27,9 +27,6 @@ import msi_official_store.models.Laptop.Content_Creation.Laptop_Content_Creation
  * @author mariq
  */
 public class FXML_Make_Order_Content_CreationController implements Initializable {
-
-    //Content Creation Models
-    Laptop_Content_Creation_Model LCCM = new Laptop_Content_Creation_Model();
 
     @FXML
     private SplitPane Menu_Order;
@@ -135,13 +132,15 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
     private void Laptop_Creator_Creation(ActionEvent event) {
         //MSI Creator Z16 HX Studio B13 VETO
         if (event.getSource() == MSICreatorZ16HXStudioB13VETO) {
-            MSICreatorZ16HXStudioB13VETO.setSelected(true);
-            LCCM.setName(MSICreatorZ16HXStudioB13VETO.getText());
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSICreatorZ16HXStudioB13VETO.getText(), "Intel i7 - 13700HX", "RTX 4060 LAPTOP GPU, 8GB GDD6");
+                Receive.showinfoprice(3060.25);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -149,7 +148,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-
+                MSICreatorZ16HXStudioB13VETO.setSelected(true);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -157,13 +156,15 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z17 HX Studio A13V
         if (event.getSource() == MSICreatorZ17HXStudioA13V) {
-            MSICreatorZ17HXStudioA13V.setSelected(true);
-            LCCM.setName(MSICreatorZ17HXStudioA13V.getText());
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSICreatorZ17HXStudioA13V.getText(), "Intel i9 - 13950HX", "RTX 4070 LAPTOP GPU, 8GB GDD6");
+                Receive.showinfoprice(3571.43);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -171,6 +172,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
+                MSICreatorZ17HXStudioA13V.setSelected(true);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -179,13 +181,15 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator M16 B13VE
         if (event.getSource() == MSICreatorM16B13VE) {
-            MSICreatorM16B13VE.setSelected(true);
-            LCCM.setName(MSICreatorM16B13VE.getText());
+
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSICreatorM16B13VE.getText(), "Intel i7 - 13700H", "RTX 4050 LAPTOP GPU, 6GB GDD6");
+                Receive.showinfoprice(1594.39);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -193,7 +197,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
-
+                MSICreatorM16B13VE.setSelected(true);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -201,13 +205,15 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z16HX Studio B13VGTO
         if (event.getSource() == MSICreatorZ16HXStudioB13VGTO) {
-            MSICreatorZ16HXStudioB13VGTO.setSelected(true);
-            LCCM.setName(MSICreatorZ16HXStudioB13VGTO.getText());
+           
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSICreatorZ16HXStudioB13VGTO.getText(), "Intel i7 - 13700HX", "RTX 4070 LAPTOP GPU, 8GB GDD6");
+                Receive.showinfoprice(3316.33);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -215,6 +221,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.setScene(scene);
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
+                MSICreatorZ16HXStudioB13VGTO.setSelected(true);
 
             } catch (IOException e) {
                 e.printStackTrace();

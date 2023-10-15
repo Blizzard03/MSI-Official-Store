@@ -19,7 +19,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import msi_official_store.models.Laptop.Bussiness_Productivity.Laptop_Bussiness_Productivity_Model;
+import msi_official_store.controllers.Recives.FXML_RecivesController;
 
 /**
  * FXML Controller class
@@ -28,9 +28,7 @@ import msi_official_store.models.Laptop.Bussiness_Productivity.Laptop_Bussiness_
  */
 public class FXML_Make_Order_Business_Productivity_Controller implements Initializable {
 
-    //Laptop Bussiness & Productivity Model
-    Laptop_Bussiness_Productivity_Model LBPM = new Laptop_Bussiness_Productivity_Model();
-    
+      
     @FXML
     private SplitPane Menu_Order;
     @FXML
@@ -141,6 +139,9 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSISummitE14FlipEvoA13M.getText(), "Intel i7 - 13600P", "Iris Xe Graphic");
+                Receive.showinfoprice(1657.63);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -149,7 +150,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSISummitE14FlipEvoA13M.setSelected(true);
-                LBPM.setName(MSISummitE14FlipEvoA13M.getText());
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -162,6 +163,9 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIModern14C7M.getText(), "AMD RYZEN 5 7530U", "AMD Radeon™ Graphics");
+                Receive.showinfoprice(573.98);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -170,7 +174,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIModern14C7M.setSelected(true);
-                LBPM.setName(MSIModern14C7M.getText());
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -183,6 +187,9 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIPrestige14HB13UCX.getText(), "Intel i7 - 13620H", "RTX 2050 LAPTOP GPU, 4GB GDD6");
+                Receive.showinfoprice(1211.73);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -191,7 +198,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIPrestige14HB13UCX.setSelected(true);
-                LBPM.setName(MSIPrestige14HB13UCX.getText());
+              
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -204,6 +211,9 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 Parent root = (Parent) loader.load();
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
+                FXML_RecivesController Receive = loader.getController();
+                Receive.showInfomodel(MSIModern15B13M.getText(), "Intel i5 - 1335U", "Intel Iris Xe Graphics");
+                Receive.showinfoprice(701.53);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -212,7 +222,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIModern15B13M.setSelected(true);
-                LBPM.setName(MSIModern15B13M.getText());
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }

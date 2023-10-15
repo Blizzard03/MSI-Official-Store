@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.Invoice_Physical.FXML_InvoiceController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="610.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/MSI_LOGO.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="57.0" text="Official Store">
+               <font>
+                  <Font name="Gill Sans MT" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="449.0" layoutY="15.0" text="INVOICE">
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-12.0" layoutY="100.0" prefHeight="3.0" prefWidth="622.0" style="-fx-background-color: GOLD;" />
+            <Label layoutX="14.0" layoutY="119.0" text="Customer">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="156.0" text="Address">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Address_txt" editable="false" layoutX="87.0" layoutY="156.0" prefHeight="51.0" prefWidth="200.0" />
+            <TextField fx:id="Customer_txt" editable="false" layoutX="87.0" layoutY="117.0" prefHeight="25.0" prefWidth="199.0" />
+            <Label layoutX="14.0" layoutY="226.0" text="Model">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Model_txt" editable="false" layoutX="87.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" />
+            <Separator layoutX="316.0" layoutY="99.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="5.0" style="-fx-background-color: gold;" />
+            <TextField fx:id="Price_txt" editable="false" layoutX="87.0" layoutY="262.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="264.0" text="Price">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="113.0" text="Tax">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Tax_txt" editable="false" layoutX="406.0" layoutY="111.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="shipping_txt" editable="false" layoutX="406.0" layoutY="149.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="333.0" layoutY="151.0" text="Shipping">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Discount_txt" editable="false" layoutX="406.0" layoutY="195.0" prefHeight="25.0" prefWidth="199.0" />
+            <Label layoutX="333.0" layoutY="197.0" text="Discount">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="234.0" text="Total">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="232.0" prefHeight="25.0" prefWidth="199.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

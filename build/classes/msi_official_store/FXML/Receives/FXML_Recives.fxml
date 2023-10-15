@@ -9,66 +9,67 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="397.0" style="-fx-background-color: red;">
-         <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../assets/images/MSI_LOGO.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="75.0" layoutY="58.0" text="Official Store">
-               <font>
-                  <Font name="Gill Sans MT" size="22.0" />
-               </font>
-            </Label>
-            <Separator layoutX="369.0" layoutY="101.0" orientation="VERTICAL" prefHeight="330.0" prefWidth="4.0" />
-            <Label layoutX="14.0" layoutY="121.0" text="Customer Name " textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txt_customername" layoutX="140.0" layoutY="117.0" prefHeight="25.0" prefWidth="201.0" style="-fx-cursor: text;" />
-            <Label layoutX="14.0" layoutY="154.0" text="Address Customer" textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="txt_customer_address" layoutX="140.0" layoutY="154.0" prefHeight="75.0" prefWidth="200.0" style="-fx-cursor: text;" />
-            <Label layoutX="14.0" layoutY="247.0" text="Laptop Model" textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txtlaptopmodel" editable="false" layoutX="140.0" layoutY="243.0" prefHeight="25.0" prefWidth="197.0" />
-            <Separator layoutX="4.0" layoutY="100.0" prefHeight="3.0" prefWidth="361.0" style="-fx-background-color: gold;" />
-            <Label layoutX="11.0" layoutY="293.0" text="Laptop CPU" textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txtlaptop_cpu" editable="false" layoutX="140.0" layoutY="290.0" prefHeight="25.0" prefWidth="197.0" />
-            <Label layoutX="11.0" layoutY="332.0" text="Laptop GPU" textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txt_laptop_gpu" editable="false" layoutX="140.0" layoutY="329.0" prefHeight="25.0" prefWidth="226.0" />
-            <TextField fx:id="txt_laptop_price" editable="false" layoutX="140.0" layoutY="366.0" prefHeight="25.0" prefWidth="197.0" />
-            <Label layoutX="11.0" layoutY="369.0" text="Price" textFill="WHITE">
-               <font>
-                  <Font name="Century" size="14.0" />
-               </font>
-            </Label>
-            <Button layoutX="268.0" layoutY="404.0" mnemonicParsing="false" onAction="#Print_Invoice" style="-fx-background-color: silver; -fx-cursor: hand;" text="Print Invoice" textFill="WHITE">
-               <font>
-                  <Font name="Gill Sans MT Italic" size="14.0" />
-               </font>
-               <effect>
-                  <DropShadow blurType="GAUSSIAN" height="35.83" radius="12.965" width="18.03" />
-               </effect>
-            </Button>
-         </children></AnchorPane>
-  </content>
+<ScrollPane fx:id="Recive_maker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Recives.FXML_RecivesController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="388.0" style="-fx-background-color: red;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/images/MSI_LOGO.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="155.0" layoutY="65.0" text="Official Store">
+                    <font>
+                        <Font name="Gill Sans MT" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="121.0" text="Customer Name " textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txt_customername" layoutX="140.0" layoutY="117.0" prefHeight="25.0" prefWidth="227.0" style="-fx-cursor: text;" />
+                <Label layoutX="14.0" layoutY="154.0" text="Address Customer" textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="txt_customer_address" layoutX="140.0" layoutY="154.0" prefHeight="75.0" prefWidth="227.0" style="-fx-cursor: text;" />
+                <Label layoutX="14.0" layoutY="278.0" text="Laptop Model" textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtlaptopmodel" editable="false" layoutX="140.0" layoutY="274.0" prefHeight="25.0" prefWidth="224.0" />
+                <Separator layoutX="4.0" layoutY="99.0" prefHeight="4.0" prefWidth="387.0" style="-fx-background-color: gold;" />
+                <Label layoutX="11.0" layoutY="324.0" text="Laptop CPU" textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtlaptop_cpu" editable="false" layoutX="140.0" layoutY="321.0" prefHeight="25.0" prefWidth="226.0" />
+                <Label layoutX="11.0" layoutY="363.0" text="Laptop GPU" textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txt_laptop_gpu" editable="false" layoutX="140.0" layoutY="360.0" prefHeight="25.0" prefWidth="226.0" />
+                <TextField fx:id="txt_laptop_price" editable="false" layoutX="140.0" layoutY="397.0" prefHeight="25.0" prefWidth="226.0" />
+                <Label layoutX="11.0" layoutY="400.0" text="Price" textFill="WHITE">
+                    <font>
+                        <Font name="Century" size="14.0" />
+                    </font>
+                </Label>
+                <Button layoutX="293.0" layoutY="436.0" mnemonicParsing="false" onAction="#Print_Invoice" style="-fx-background-color: silver; -fx-cursor: hand;" text="Print Invoice" textFill="WHITE">
+                    <font>
+                        <Font name="Gill Sans MT Italic" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="35.83" radius="12.965" width="18.03" />
+                    </effect>
+                </Button>
+           
+            </children>
+        </AnchorPane>
+    </content>
 </ScrollPane>

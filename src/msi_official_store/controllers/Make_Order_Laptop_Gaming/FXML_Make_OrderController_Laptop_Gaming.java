@@ -139,7 +139,7 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
                 FXML_RecivesController Receive = loader.getController();
-                Receive.showInfomodel(MSIPulse15B13V.getText(), "Intel i9 - 13900H", "RTX 4070 LAPTOP GPU, 8GB GDD6");
+                Receive.showInfomodel(MSIPulse15B13V.getText(), "Intel i9 - 13900H", "RTX 4070 LAPTOP GPU 8GB GDD6");
                 Receive.showinfoprice(1849.49);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
@@ -163,8 +163,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
                 FXML_RecivesController Receive = loader.getController();
-                Receive.showInfomodel(MSIBRAVO15C7V.getText(), "AMD RYZEN 7 7735HS", "RTX 4050 LAPTOP GPU, 6GB GDD6");
-                Receive.showinfoprice(1849.49);
+                Receive.showInfomodel(MSIBRAVO15C7V.getText(), "AMD RYZEN 7 7735HS", "RTX 4050 LAPTOP GPU 6GB GDD6");
+                Receive.showinfoprice(1020.08);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -187,8 +187,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
                 FXML_RecivesController Receive = loader.getController();
-                Receive.showInfomodel(MSITitanGT77HX13V.getText(), "Intel i9 - 13980HX", "RTX 4090 LAPTOP GPU, 16GB GDD6");
-                Receive.showinfoprice(1849.49);
+                Receive.showInfomodel(MSITitanGT77HX13V.getText(), "Intel i9 - 13980HX", "RTX 4090 LAPTOP GPU 16GB GDD6");
+                Receive.showinfoprice(5739.80);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
@@ -211,8 +211,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                 Scene scene = new Scene(root);
                 Stage stg = new Stage();
                 FXML_RecivesController Receive = loader.getController();
-                Receive.showInfomodel(MSIKatana17B13VFK.getText(), "Intel i9 - 13900H", "RTX 4060 LAPTOP GPU, 8GB GDD6");
-                Receive.showinfoprice(1849.49);
+                Receive.showInfomodel(MSIKatana17B13VFK.getText(), "Intel i9 - 13900H", "RTX 4060 LAPTOP GPU 8GB GDD6");
+                Receive.showinfoprice(2869.90);
                 stg.setTitle("Receipt");
                 stg.initModality(Modality.APPLICATION_MODAL);
                 stg.setResizable(false);
