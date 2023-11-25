@@ -23,6 +23,11 @@
               <MenuItem mnemonicParsing="false" onAction="#Invoice" text="Invoice_Example" />
             </items>
           </Menu>
+            <Menu fx:id="update_menu" mnemonicParsing="false" text="Update">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Update_Price" text="Price" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#About_Me" text="About" />
