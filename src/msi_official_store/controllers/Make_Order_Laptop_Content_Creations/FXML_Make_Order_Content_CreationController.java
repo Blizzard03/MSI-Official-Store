@@ -34,10 +34,10 @@ import msi_official_store.controllers.Update.FXMLUpdatePriceController;
  * @author mariq
  */
 public class FXML_Make_Order_Content_CreationController implements Initializable {
-
+    
     Laptop ltp = new Laptop();
     public static Price_Update pudt = new Price_Update();
-
+    
     @FXML
     private SplitPane Menu_Order;
     @FXML
@@ -61,13 +61,13 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
     @FXML
     private ToggleButton Bussiness_Productivity;
     @FXML
-    private ToggleButton CreatorZ16VETO;
+    public static ToggleButton CreatorZ16VETO;
     @FXML
-    private ToggleButton CreatorZ17Edit;
+    public static ToggleButton CreatorZ17Edit;
     @FXML
-    private ToggleButton CreatorM16;
+    public static ToggleButton CreatorM16;
     @FXML
-    private ToggleButton CreatorZ16vgtoEdit;
+    public static ToggleButton CreatorZ16vgtoEdit;
     @FXML
     private ToggleGroup Edits;
 
@@ -87,7 +87,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
         //MSI Creator Z16HX Studio B13VGTO
         pudt.setMSICreatorM16B13VEPrice(1594.39);
     }
-
+    
     @FXML
     private void Models(ActionEvent event) {
         //Gaming Section
@@ -180,18 +180,18 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 Gaming_Btn.setSelected(false);
                 Content_Creations.setSelected(false);
                 Bussiness_Productivity.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-
+    
     @FXML
     private void Laptop_Creator_Creation(ActionEvent event) {
         //MSI Creator Z16 HX Studio B13 VETO
         if (event.getSource() == MSICreatorZ16HXStudioB13VETO) {
-
+            
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -227,7 +227,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z17 HX Studio A13V
         if (event.getSource() == MSICreatorZ17HXStudioA13V) {
-
+            
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -256,7 +256,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSICreatorZ17HXStudioA13V.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -264,7 +264,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator M16 B13VE
         if (event.getSource() == MSICreatorM16B13VE) {
-
+            
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -300,7 +300,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
 
         //MSI Creator Z16HX Studio B13VGTO
         if (event.getSource() == MSICreatorZ16HXStudioB13VGTO) {
-
+            
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Receives/FXML_Recives.fxml"));
                 Parent root = (Parent) loader.load();
@@ -329,14 +329,14 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSICreatorZ16HXStudioB13VGTO.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
+        
     }
-
+    
     @FXML
     private void Edit_Price_Click(ActionEvent event) {
         Alert art = new Alert(Alert.AlertType.WARNING, "UPDATE PRICE ONLY!!!!", ButtonType.OK);
@@ -361,7 +361,7 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
+                    CreatorZ16VETO.setVisible(false);
                     CreatorZ16VETO.setSelected(true);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -383,12 +383,12 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
+                    CreatorZ17Edit.setVisible(false);
                     CreatorZ17Edit.setSelected(true);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
+                
             } else //MSI Creator M16 B13VE
             if (event.getSource() == CreatorM16) {
                 try {
@@ -406,8 +406,8 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
-                    CreatorZ17Edit.setSelected(true);
+                    CreatorM16.setVisible(false);
+                    CreatorM16.setSelected(true);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -429,11 +429,12 @@ public class FXML_Make_Order_Content_CreationController implements Initializable
                     stg.setScene(scene);
                     stg.show();
                     CreatorZ17Edit.setSelected(true);
+                    CreatorZ17Edit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
     }
-
+    
 }

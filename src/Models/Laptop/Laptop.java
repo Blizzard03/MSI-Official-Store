@@ -6,7 +6,7 @@ package Models.Laptop;
 
 /**
  *
- * @author Blizzard
+ * @author mariq
  */
 public class Laptop {
     private String Models,CPU,GPU;

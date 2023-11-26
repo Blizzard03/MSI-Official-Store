@@ -15,6 +15,26 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
+   /*
+    * READ ME
+    *
+    * FREATURES 
+    *  1. Verification During : 
+    *     a. Null Field
+    *     b. Close Windows
+    *     c. Reset Data
+    *     d. Save Data
+    *     e. Not Complete Task
+    *  2. Print Invoice to TXT file format
+    *  3. Update Price
+    *  4. Modaless Update Price Form
+    *  5. Add Models Class :
+    *     a. Custumers
+    *     b. Laptop
+    *     c. Update Price
+    *  6. One Print Invoice per created
+    *  7. One Time Update Price
+    */
 /**
  *
  * @author mariq

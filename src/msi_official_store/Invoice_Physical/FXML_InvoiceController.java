@@ -136,7 +136,7 @@ public class FXML_InvoiceController implements Initializable {
             Invoice.write(GPU_TXT.getText() + "\n");
             Invoice.write("=========================================================================" + "\n");
             Invoice.write("Price" + "\n");
-            Invoice.write(Price_txt.getText() + "\n");
+            Invoice.write("$"+Price_txt.getText() + "\n");
             Invoice.write("Tax" + "\n");
             Invoice.write(Tax_txt.getText() + "\n");
             Invoice.write("Shipping" + "\n");

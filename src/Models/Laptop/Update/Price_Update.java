@@ -6,7 +6,7 @@ package Models.Laptop.Update;
 
 /**
  *
- * @author Blizzard
+ * @author mariq
  */
 public class Price_Update {
 

@@ -370,6 +370,7 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                     stg.setScene(scene);
                     stg.show();
                     PulseEdit.setSelected(true);
+                    PulseEdit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -390,7 +391,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-                    PulseEdit.setSelected(true);
+                    BravoEdit.setSelected(true);
+                    BravoEdit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -411,7 +413,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-                    PulseEdit.setSelected(true);
+                    TitanEdit.setSelected(true);
+                    TitanEdit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -432,7 +435,8 @@ public class FXML_Make_OrderController_Laptop_Gaming implements Initializable {
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-                    PulseEdit.setSelected(true);
+                    KatanaEdit.setSelected(true);
+                    KatanaEdit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

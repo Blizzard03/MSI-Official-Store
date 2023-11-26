@@ -6,7 +6,7 @@ package Models.Customer;
 
 /**
  *
- * @author Blizzard
+ * @author mariq
  */
 public class Customer {
 

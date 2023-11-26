@@ -25,7 +25,7 @@ import msi_official_store.controllers.Make_Order_Laptop_Gaming.FXML_Make_OrderCo
 /**
  * FXML Controller class
  *
- * @author Blizzard
+ * @author mariq
  */
 public class FXMLUpdatePriceController implements Initializable {
 
@@ -106,8 +106,10 @@ public class FXMLUpdatePriceController implements Initializable {
 
             //MSI Creator Z16HX Studio B13VGTO
             FXML_Make_Order_Content_CreationController.pudt.setMSICreatorZ16HXStudioB13VGTOPrice(Double.parseDouble(Pricetxt.getText()));
+
             Update_Btn.getScene().getWindow().hide();
         }
+
     }
 
     @FXML

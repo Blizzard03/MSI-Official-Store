@@ -43,7 +43,7 @@ public class FXML_RecivesController implements Initializable {
 
     Customer crm = new Customer();
     Laptop ltp = new Laptop();
-    
+
     //Curency Formatter
     Locale USA = new Locale("en", "US");
     NumberFormat formater = NumberFormat.getCurrencyInstance(USA);
@@ -73,44 +73,48 @@ public class FXML_RecivesController implements Initializable {
     }
 
     @FXML
-    private void Print_Invoice(ActionEvent event) {  
-        if(txt_customername.getText().equals(null)){
+    private void Print_Invoice(ActionEvent event) {
+        if (txt_customername.getText().equals(null)) {
             Alert art = new Alert(Alert.AlertType.WARNING, "The field is currently empty. Please ensure to input the required name to proceed!!", ButtonType.OK);
             art.showAndWait();
-        }
-        
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Physchical_Invoice/FXML_Invoice.fxml"));
-            Parent root = (Parent) loader.load();
-            Scene scene = new Scene(root);
-            Stage stg = new Stage();
-            FXML_InvoiceController Invoice = loader.getController();
-            ltp.setModels(txtlaptopmodel.getText());
-            ltp.setCPU(txtlaptop_cpu.getText());
-            ltp.setGPU(txt_laptop_gpu.getText());
-            crm.setName(txt_customername.getText());
-            crm.setAddress(txt_customer_address.getText());
-            Invoice.showdata(crm.getName(), crm.getAddress(), ltp.getModels(), ltp.getCPU(), ltp.getGPU(), Double.parseDouble(txt_laptop_price.getText()));
-            stg.setOnCloseRequest(new EventHandler<WindowEvent>() {
-                public void handle(final WindowEvent windowEvent) {
-                    Alert al = new Alert(Alert.AlertType.CONFIRMATION, "Are You Sure Want Quit The Program?", ButtonType.OK, ButtonType.CANCEL);
-                    al.showAndWait();
-                    if (al.getResult() == ButtonType.CANCEL) {
-                        windowEvent.consume();
+        } else if (txt_customer_address.getText().equals(null)) {
+            Alert art = new Alert(Alert.AlertType.WARNING, "The field is currently empty. Please ensure to input the required address to proceed!!", ButtonType.OK);
+            art.showAndWait();
+        } else {
+
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Physchical_Invoice/FXML_Invoice.fxml"));
+                Parent root = (Parent) loader.load();
+                Scene scene = new Scene(root);
+                Stage stg = new Stage();
+                FXML_InvoiceController Invoice = loader.getController();
+                ltp.setModels(txtlaptopmodel.getText());
+                ltp.setCPU(txtlaptop_cpu.getText());
+                ltp.setGPU(txt_laptop_gpu.getText());
+                crm.setName(txt_customername.getText());
+                crm.setAddress(txt_customer_address.getText());
+                Invoice.showdata(crm.getName(), crm.getAddress(), ltp.getModels(), ltp.getCPU(), ltp.getGPU(), Double.parseDouble(txt_laptop_price.getText()));
+                stg.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                    public void handle(final WindowEvent windowEvent) {
+                        Alert al = new Alert(Alert.AlertType.CONFIRMATION, "Are You Sure Want Quit The Program?", ButtonType.OK, ButtonType.CANCEL);
+                        al.showAndWait();
+                        if (al.getResult() == ButtonType.CANCEL) {
+                            windowEvent.consume();
+                        }
                     }
                 }
-            }
-            );
-            stg.setTitle("Invoice");
-            stg.initModality(Modality.APPLICATION_MODAL);
-            stg.setResizable(false);
-            stg.setIconified(false);
-            stg.setScene(scene);
-            stg.show();
-            Recive_maker.getScene().getWindow().hide();
+                );
+                stg.setTitle("Invoice");
+                stg.initModality(Modality.APPLICATION_MODAL);
+                stg.setResizable(false);
+                stg.setIconified(false);
+                stg.setScene(scene);
+                stg.show();
+                Recive_maker.getScene().getWindow().hide();
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

@@ -36,10 +36,10 @@ import msi_official_store.controllers.Update.FXMLUpdatePriceController;
  * @author mariq
  */
 public class FXML_Make_Order_Business_Productivity_Controller implements Initializable {
-
+    
     public static Price_Update pudt = new Price_Update();
     Laptop ltp = new Laptop();
-
+    
     @FXML
     private SplitPane Menu_Order;
     @FXML
@@ -87,9 +87,9 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
         pudt.setMSIPrestige14HB13UCXPrice(1211.73);
         //MSI Modern 15 B13M
         pudt.setMSIModern15B13MPrice(701.53);
-
+        
     }
-
+    
     @FXML
     private void Models(ActionEvent event) {
         //Gaming Section
@@ -183,13 +183,13 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 Gaming_Btn.setSelected(false);
                 Content_Creations.setSelected(false);
                 Bussiness_Productivity.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-
+    
     @FXML
     private void Laptop_Business_Productivity(ActionEvent event) {
         //MSI Summit E14 Flip Evo - A13M
@@ -222,7 +222,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSISummitE14FlipEvoA13M.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -258,7 +258,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIModern14C7M.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -294,7 +294,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIPrestige14HB13UCX.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -330,14 +330,14 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                 stg.show();
                 Menu_Order.getScene().getWindow().hide();
                 MSIModern15B13M.setSelected(true);
-
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
+        
     }
-
+    
     @FXML
     private void Edit_Price_Click(ActionEvent event) {
         Alert art = new Alert(Alert.AlertType.WARNING, "UPDATE PRICE ONLY!!!!", ButtonType.OK);
@@ -360,7 +360,7 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
+                    Summitedit.setVisible(false);
                     Summitedit.setSelected(true);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -382,13 +382,12 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
                     Modern14Edit.setSelected(true);
-
+                    Modern14Edit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
+                
             } else //MSI Modern 15 B13M
             if (event.getSource() == Modern15Edit) {
                 try {
@@ -406,12 +405,12 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
                     Modern15Edit.setSelected(true);
+                    Modern15Edit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
+                
             } else //MSI Prestige 14 H B13UCX
             if (event.getSource() == PresitageEdit) {
                 try {
@@ -429,14 +428,14 @@ public class FXML_Make_Order_Business_Productivity_Controller implements Initial
                     stg.setIconified(false);
                     stg.setScene(scene);
                     stg.show();
-
                     PresitageEdit.setSelected(true);
+                    PresitageEdit.setVisible(false);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
+                
             }
         }
     }
-
+    
 }
