@@ -2,16 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Models.Custumer;
+package Models.Customer;
 
 /**
  *
  * @author Blizzard
  */
-public class Custumer {
+public class Customer {
 
-    private String Name, Address, Email, Password;
+    
+    private String Name, Address;
 
+    
     public String getName() {
         return Name;
     }
@@ -28,20 +30,9 @@ public class Custumer {
         this.Address = Address;
     }
 
-    public String getEmail() {
-        return Email;
-    }
+   
 
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String Password) {
-        this.Password = Password;
-    }
     
+    
+
 }

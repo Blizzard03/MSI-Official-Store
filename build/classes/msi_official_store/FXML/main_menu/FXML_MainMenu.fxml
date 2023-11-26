@@ -15,7 +15,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Order">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#Make_Order" text="Make Order" />
+              <MenuItem mnemonicParsing="false" onAction="#Make_Order" text="Make Order + Update Price" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Invoice">

@@ -13,7 +13,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.Menu;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -28,6 +29,8 @@ public class Main_MenuController implements Initializable {
     
     @FXML
     private AnchorPane Main_Menu;
+    @FXML
+    private Menu update_menu;
 
     /**
      * Initializes the controller class.
@@ -93,5 +96,7 @@ public class Main_MenuController implements Initializable {
             e.printStackTrace();
         }
     }
+
+   
 
 }

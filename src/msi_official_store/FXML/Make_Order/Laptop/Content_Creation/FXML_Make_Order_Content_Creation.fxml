@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<SplitPane fx:id="Menu_Order" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Make_Order_Laptop_Content_Creations.FXML_Make_Order_Content_CreationController">
+<SplitPane fx:id="Menu_Order" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Make_Order_Laptop_Content_Creations.FXML_Make_Order_Content_CreationController">
   <items>
     <AnchorPane maxHeight="600.0" maxWidth="235.0" minHeight="600.0" minWidth="235.0" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: red;" SplitPane.resizableWithParent="false">
          <children>
@@ -87,6 +89,45 @@
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="CreatorZ16VETO" layoutX="260.0" layoutY="309.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Edits" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="CreatorZ17Edit" layoutX="615.0" layoutY="310.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="CreatorM16" layoutX="274.0" layoutY="650.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="CreatorZ16vgtoEdit" layoutX="615.0" layoutY="650.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </ToggleButton>
                </children>
             </AnchorPane>

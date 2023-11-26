@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.Invoice_Physical.FXML_InvoiceController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.Invoice_Physical.FXML_InvoiceController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="610.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="399.0" prefWidth="620.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -27,7 +31,7 @@
                   <Font name="Century" size="23.0" />
                </font>
             </Label>
-            <Separator layoutX="-12.0" layoutY="100.0" prefHeight="3.0" prefWidth="622.0" style="-fx-background-color: GOLD;" />
+            <Separator layoutY="101.0" prefHeight="3.0" prefWidth="622.0" style="-fx-background-color: GOLD;" />
             <Label layoutX="14.0" layoutY="119.0" text="Customer">
                <font>
                   <Font name="Ebrima" size="14.0" />
@@ -46,38 +50,81 @@
                </font>
             </Label>
             <TextField fx:id="Model_txt" editable="false" layoutX="87.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" />
-            <Separator layoutX="316.0" layoutY="99.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="5.0" style="-fx-background-color: gold;" />
-            <TextField fx:id="Price_txt" editable="false" layoutX="87.0" layoutY="262.0" prefHeight="25.0" prefWidth="200.0" />
-            <Label layoutX="14.0" layoutY="264.0" text="Price">
+            <Separator layoutX="316.0" layoutY="99.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="0.0" style="-fx-background-color: gold;" />
+            <TextField fx:id="Price_txt" editable="false" layoutX="407.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="334.0" layoutY="119.0" text="Price">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="333.0" layoutY="113.0" text="Tax">
+            <Label layoutX="333.0" layoutY="165.0" text="Tax">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Tax_txt" editable="false" layoutX="406.0" layoutY="111.0" prefHeight="25.0" prefWidth="200.0" />
-            <TextField fx:id="shipping_txt" editable="false" layoutX="406.0" layoutY="149.0" prefHeight="25.0" prefWidth="200.0" />
-            <Label layoutX="333.0" layoutY="151.0" text="Shipping">
+            <TextField fx:id="Tax_txt" editable="false" layoutX="406.0" layoutY="163.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="shipping_txt" editable="false" layoutX="406.0" layoutY="201.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="333.0" layoutY="203.0" text="Shipping">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Discount_txt" editable="false" layoutX="406.0" layoutY="195.0" prefHeight="25.0" prefWidth="199.0" />
-            <Label layoutX="333.0" layoutY="197.0" text="Discount">
+            <TextField fx:id="Discount_txt" editable="false" layoutX="406.0" layoutY="247.0" prefHeight="25.0" prefWidth="199.0" />
+            <Label layoutX="333.0" layoutY="249.0" text="Discount">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="333.0" layoutY="234.0" text="Total">
+            <Label layoutX="333.0" layoutY="286.0" text="Total">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="232.0" prefHeight="25.0" prefWidth="199.0" />
-            <Label layoutX="76.0" layoutY="266.0" text="\$" />
+            <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="284.0" prefHeight="25.0" prefWidth="199.0" />
+            <Label layoutX="396.0" layoutY="121.0" text="\$" />
+            <Button fx:id="printfinvoice" layoutX="482.0" layoutY="353.0" mnemonicParsing="false" onAction="#printfinvoiceclick" prefHeight="27.0" prefWidth="37.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="11.465" width="26.86" />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/images/Icon/printer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="main_menu" layoutX="100.0" layoutY="360.0" mnemonicParsing="false" onAction="#backtomain_menu" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="11.465" width="26.86" />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/images/Icon/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="14.0" layoutY="262.0" text="CPU">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CPU_TXT" editable="false" layoutX="87.0" layoutY="260.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="299.0" text="GPU">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="GPU_TXT" editable="false" layoutX="87.0" layoutY="297.0" prefHeight="25.0" prefWidth="200.0" />
+            <Separator layoutY="341.0" prefHeight="0.0" prefWidth="622.0" style="-fx-background-color: GOLD;" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Update.FXMLUpdatePriceController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="768.0" style="-fx-background-color: red;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/MSI_LOGO.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="53.0" text="Official Store">
+               <font>
+                  <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="355.0" layoutY="30.0" text="Price Update">
+               <font>
+                  <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ModelImage" fitHeight="295.0" fitWidth="300.0" layoutX="14.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="330.0" layoutY="97.0" text="Model">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modeltxt" editable="false" layoutX="330.0" layoutY="131.0" prefHeight="25.0" prefWidth="324.0" />
+            <Separator layoutY="84.0" prefHeight="0.0" prefWidth="799.0" />
+            <Label layoutX="330.0" layoutY="175.0" text="CPU">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CPUtxt" editable="false" layoutX="330.0" layoutY="209.0" prefHeight="25.0" prefWidth="324.0" />
+            <Label layoutX="330.0" layoutY="251.0" text="GPU">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="GPU_txt" editable="false" layoutX="330.0" layoutY="285.0" prefHeight="25.0" prefWidth="324.0" />
+            <Label layoutX="330.0" layoutY="330.0" text="Price">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Pricetxt" layoutX="347.0" layoutY="364.0" prefHeight="25.0" prefWidth="307.0" />
+            <Label layoutX="325.0" layoutY="366.0" text="\$">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Update_Btn" layoutX="339.0" layoutY="423.0" mnemonicParsing="false" onAction="#UpdateClick" style="-fx-background-color: lightgreen; -fx-cursor: hand;" text="Update">
+               <effect>
+                  <DropShadow height="26.86" radius="10.7325" width="18.07" />
+               </effect>
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Reset_Btn" layoutX="419.0" layoutY="423.0" mnemonicParsing="false" onAction="#Reset_Click" style="-fx-background-color: Gold; -fx-cursor: hand;" text="Reset">
+               <effect>
+                  <DropShadow height="26.86" radius="10.7325" width="18.07" />
+               </effect>
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="CancelClick" layoutX="482.0" layoutY="423.0" mnemonicParsing="false" onAction="#CancelClick" style="-fx-background-color: #FF9999; -fx-cursor: hand;" text="Cancel">
+               <effect>
+                  <DropShadow height="26.86" radius="10.7325" width="18.07" />
+               </effect>
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

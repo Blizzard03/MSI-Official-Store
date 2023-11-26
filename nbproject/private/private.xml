@@ -3,17 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/FXML/Login/FXMLLogin.fxml</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/Models/Laptop/Content_Creator/Content_Creator.java</file>
             <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/controllers/Make_Order_Laptop_Business_Productivity/FXML_Make_Order_Business_Productivity_Controller.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/FXML/splash_screen/splashscreen.fxml</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/controllers/Recives/FXML_RecivesController.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/controllers/Login/FXMLLoginController.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/Models/Custumer/Custumer.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/FXML/SignUp/FXMLSignUp.fxml</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/Models/Laptop/Bussiners_Producivity/Bussiners_Producivity.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/Models/Laptop/Games/Gaming.java</file>
-            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/controllers/SignUp/FXMLSignUpController.java</file>
+            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/msi_official_store/controllers/Update/FXMLUpdatePriceController.java</file>
+            <file>file:/C:/Users/Blizzard/Documents/NetBeansProjects/MSI-Official-Store/src/Models/Customer/Customer.java</file>
         </group>
     </open-files>
 </project-private>

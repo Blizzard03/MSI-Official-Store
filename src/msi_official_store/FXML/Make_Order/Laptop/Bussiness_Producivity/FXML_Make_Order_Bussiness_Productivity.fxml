@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<SplitPane fx:id="Menu_Order" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Make_Order_Laptop_Business_Productivity.FXML_Make_Order_Business_Productivity_Controller">
+<SplitPane fx:id="Menu_Order" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="msi_official_store.controllers.Make_Order_Laptop_Business_Productivity.FXML_Make_Order_Business_Productivity_Controller">
   <items>
     <AnchorPane maxHeight="600.0" maxWidth="235.0" minHeight="600.0" minWidth="235.0" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: red;" SplitPane.resizableWithParent="false">
          <children>
@@ -63,7 +65,7 @@
                         <Image url="@../../../../../assets/images/Bussiness&amp;Producivity/MSI%20Modern%2014%20C7M.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton fx:id="MSIModern14C7M" layoutX="431.0" layoutY="309.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Modern 14 C7M" toggleGroup="$Name_Models_Conent_Creator">
+                  <ToggleButton fx:id="MSIModern14C7M" layoutX="431.0" layoutY="310.0" mnemonicParsing="false" onAction="#Laptop_Business_Productivity" style="-fx-background-color: TRANSPARENT; -fx-cursor: hand;" text="MSI Modern 14 C7M" toggleGroup="$Name_Models_Conent_Creator">
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
@@ -87,6 +89,45 @@
                      <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
+                  </ToggleButton>
+                   <ToggleButton fx:id="Summitedit" layoutX="254.0" layoutY="310.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Edits" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="Modern14Edit" layoutX="575.0" layoutY="310.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="Modern15Edit" layoutX="575.0" layoutY="650.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </ToggleButton>
+                  <ToggleButton fx:id="PresitageEdit" layoutX="254.0" layoutY="650.0" mnemonicParsing="false" onAction="#Edit_Price_Click" style="-fx-background-color: transparent; -fx-cursor: hand;" toggleGroup="$Edits">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../assets/images/Icon/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </ToggleButton>
                </children>
             </AnchorPane>

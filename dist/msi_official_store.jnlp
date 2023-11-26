@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="msi_official_store.jar" size="4488210" download="eager" />
+    <jar href="msi_official_store.jar" size="4969039" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="msi_official_store.main_class.main"  name="msi_official_store" />
   <update check="always"/>
