@@ -33,6 +33,8 @@
 ## Invoice
 ![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/6d02b15e-2b52-4c6b-8987-eab0ca3e8a13)
 
+## Printed Version
+![image](https://github.com/Blizzard03/MSI-Official-Store/assets/99153189/5b66b6d0-e1b2-4f25-8b79-dc3b0b929776)
 
 
 
