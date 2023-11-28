@@ -54,7 +54,7 @@ public class FXMLUpdatePriceController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        Pricetxt.isFocused();
     }
 
     @FXML

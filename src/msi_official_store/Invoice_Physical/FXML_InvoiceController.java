@@ -89,6 +89,7 @@ public class FXML_InvoiceController implements Initializable {
         CPU_TXT.setText(CPU);
         GPU_TXT.setText(GPU);
         Price_txt.setText(String.valueOf(Price));
+        
 
         if (Price > 1000.00) {
             double harga = Double.parseDouble(Price_txt.getText());
@@ -113,11 +114,12 @@ public class FXML_InvoiceController implements Initializable {
             Total_txt.setText(formater.format(totalharga));
 
         }
-
     }
 
-    @FXML
-    private void printfinvoiceclick(ActionEvent event) {
+
+@FXML
+private void printfinvoiceclick(ActionEvent event
+    ) {
         try {
             BufferedWriter Invoice = new BufferedWriter(new FileWriter("src\\Invoice\\Invoice.txt"));
             Invoice.write("=========================================================================" + "\n");
@@ -136,7 +138,7 @@ public class FXML_InvoiceController implements Initializable {
             Invoice.write(GPU_TXT.getText() + "\n");
             Invoice.write("=========================================================================" + "\n");
             Invoice.write("Price" + "\n");
-            Invoice.write("$"+Price_txt.getText() + "\n");
+            Invoice.write("$" + Price_txt.getText() + "\n");
             Invoice.write("Tax" + "\n");
             Invoice.write(Tax_txt.getText() + "\n");
             Invoice.write("Shipping" + "\n");
@@ -158,7 +160,8 @@ public class FXML_InvoiceController implements Initializable {
     }
 
     @FXML
-    private void backtomain_menu(ActionEvent event) {
+private void backtomain_menu(ActionEvent event
+    ) {
         Alert art = new Alert(Alert.AlertType.WARNING, "The data is scheduled for deletion. Would you like to print a copy of the data you have requested before we proceed with the deletion?", ButtonType.YES, ButtonType.NO);
         art.showAndWait();
         if (art.getResult() == ButtonType.YES) {

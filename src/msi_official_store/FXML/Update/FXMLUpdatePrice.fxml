@@ -36,26 +36,26 @@
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="modeltxt" editable="false" layoutX="330.0" layoutY="131.0" prefHeight="25.0" prefWidth="324.0" />
+            <TextField fx:id="modeltxt" editable="false" layoutX="330.0" layoutY="131.0" prefHeight="25.0" prefWidth="324.0" style="-fx-cursor: default;" />
             <Separator layoutY="84.0" prefHeight="0.0" prefWidth="799.0" />
             <Label layoutX="330.0" layoutY="175.0" text="CPU">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="CPUtxt" editable="false" layoutX="330.0" layoutY="209.0" prefHeight="25.0" prefWidth="324.0" />
+            <TextField fx:id="CPUtxt" editable="false" layoutX="330.0" layoutY="209.0" prefHeight="25.0" prefWidth="324.0" style="-fx-cursor: default;" />
             <Label layoutX="330.0" layoutY="251.0" text="GPU">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="GPU_txt" editable="false" layoutX="330.0" layoutY="285.0" prefHeight="25.0" prefWidth="324.0" />
+            <TextField fx:id="GPU_txt" editable="false" layoutX="330.0" layoutY="285.0" prefHeight="25.0" prefWidth="324.0" style="-fx-cursor: default;" />
             <Label layoutX="330.0" layoutY="330.0" text="Price">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="Pricetxt" layoutX="347.0" layoutY="364.0" prefHeight="25.0" prefWidth="307.0" />
+            <TextField fx:id="Pricetxt" layoutX="347.0" layoutY="364.0" prefHeight="25.0" prefWidth="307.0" style="-fx-cursor: text;" />
             <Label layoutX="325.0" layoutY="366.0" text="\$">
                <font>
                   <Font name="Gill Sans MT" size="18.0" />

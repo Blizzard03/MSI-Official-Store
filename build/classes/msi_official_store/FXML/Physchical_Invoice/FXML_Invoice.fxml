@@ -42,16 +42,16 @@
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextArea fx:id="Address_txt" editable="false" layoutX="87.0" layoutY="156.0" prefHeight="51.0" prefWidth="200.0" />
-            <TextField fx:id="Customer_txt" editable="false" layoutX="87.0" layoutY="117.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextArea fx:id="Address_txt" editable="false" layoutX="87.0" layoutY="156.0" prefHeight="51.0" prefWidth="200.0" style="-fx-cursor: default;" />
+            <TextField fx:id="Customer_txt" editable="false" layoutX="87.0" layoutY="117.0" prefHeight="25.0" prefWidth="199.0" style="-fx-cursor: default;" />
             <Label layoutX="14.0" layoutY="226.0" text="Model">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Model_txt" editable="false" layoutX="87.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="Model_txt" editable="false" layoutX="87.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
             <Separator layoutX="316.0" layoutY="99.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="0.0" style="-fx-background-color: gold;" />
-            <TextField fx:id="Price_txt" editable="false" layoutX="407.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="Price_txt" editable="false" layoutX="407.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
             <Label layoutX="334.0" layoutY="119.0" text="Price">
                <font>
                   <Font name="Ebrima" size="14.0" />
@@ -62,14 +62,14 @@
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Tax_txt" editable="false" layoutX="406.0" layoutY="163.0" prefHeight="25.0" prefWidth="200.0" />
-            <TextField fx:id="shipping_txt" editable="false" layoutX="406.0" layoutY="201.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="Tax_txt" editable="false" layoutX="406.0" layoutY="163.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
+            <TextField fx:id="shipping_txt" editable="false" layoutX="406.0" layoutY="201.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
             <Label layoutX="333.0" layoutY="203.0" text="Shipping">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Discount_txt" editable="false" layoutX="406.0" layoutY="247.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="Discount_txt" editable="false" layoutX="406.0" layoutY="247.0" prefHeight="25.0" prefWidth="199.0" style="-fx-cursor: default;" />
             <Label layoutX="333.0" layoutY="249.0" text="Discount">
                <font>
                   <Font name="Ebrima" size="14.0" />
@@ -80,7 +80,7 @@
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="284.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="Total_txt" editable="false" layoutX="406.0" layoutY="284.0" prefHeight="25.0" prefWidth="199.0" style="-fx-cursor: default;" />
             <Label layoutX="396.0" layoutY="121.0" text="\$" />
             <Button fx:id="printfinvoice" layoutX="482.0" layoutY="353.0" mnemonicParsing="false" onAction="#printfinvoiceclick" prefHeight="27.0" prefWidth="37.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
                <font>
@@ -117,13 +117,13 @@
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="CPU_TXT" editable="false" layoutX="87.0" layoutY="260.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="CPU_TXT" editable="false" layoutX="87.0" layoutY="260.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
             <Label layoutX="14.0" layoutY="299.0" text="GPU">
                <font>
                   <Font name="Ebrima" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="GPU_TXT" editable="false" layoutX="87.0" layoutY="297.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="GPU_TXT" editable="false" layoutX="87.0" layoutY="297.0" prefHeight="25.0" prefWidth="200.0" style="-fx-cursor: default;" />
             <Separator layoutY="341.0" prefHeight="0.0" prefWidth="622.0" style="-fx-background-color: GOLD;" />
          </children></AnchorPane>
   </content>
