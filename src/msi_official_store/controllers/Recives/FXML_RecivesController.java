@@ -74,14 +74,13 @@ public class FXML_RecivesController implements Initializable {
 
     @FXML
     private void Print_Invoice(ActionEvent event) {
-        if (txt_customername.getText().equals(null)) {
+        if (txt_customername.getText().isEmpty()) {
             Alert art = new Alert(Alert.AlertType.WARNING, "The field is currently empty. Please ensure to input the required name to proceed!!", ButtonType.OK);
             art.showAndWait();
-        } else if (txt_customer_address.getText().equals(null)) {
+        } else if (txt_customer_address.getText().isEmpty()) {
             Alert art = new Alert(Alert.AlertType.WARNING, "The field is currently empty. Please ensure to input the required address to proceed!!", ButtonType.OK);
             art.showAndWait();
         } else {
-
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/msi_official_store/FXML/Physchical_Invoice/FXML_Invoice.fxml"));
                 Parent root = (Parent) loader.load();
